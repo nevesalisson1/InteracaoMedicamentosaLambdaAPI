@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace InteracaoMedicamentosaLambdaAPI.Controllers;
 
-[Route("api/[controller]")]
+[Route("Api/[controller]")]
 public class ValuesController : ControllerBase
 {
     // GET api/values

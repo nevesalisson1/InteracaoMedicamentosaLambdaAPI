@@ -5,8 +5,6 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InteracaoMedicamentosaLambdaAPI", "InteracaoMedicamentosaLambdaAPI.csproj", "{0E7E3FE5-14EE-4AB4-8AEA-E8AA5A537898}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InteracaoMedicamentosaLambdaAPI.Tests", "..\InteracaoMedicamentosaLambdaAPI.Tests\InteracaoMedicamentosaLambdaAPI.Tests.csproj", "{711EE694-7856-42A1-9AFF-927EEAEFC0D4}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{0E7E3FE5-14EE-4AB4-8AEA-E8AA5A537898}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E7E3FE5-14EE-4AB4-8AEA-E8AA5A537898}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E7E3FE5-14EE-4AB4-8AEA-E8AA5A537898}.Release|Any CPU.Build.0 = Release|Any CPU
-		{711EE694-7856-42A1-9AFF-927EEAEFC0D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{711EE694-7856-42A1-9AFF-927EEAEFC0D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{711EE694-7856-42A1-9AFF-927EEAEFC0D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{711EE694-7856-42A1-9AFF-927EEAEFC0D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

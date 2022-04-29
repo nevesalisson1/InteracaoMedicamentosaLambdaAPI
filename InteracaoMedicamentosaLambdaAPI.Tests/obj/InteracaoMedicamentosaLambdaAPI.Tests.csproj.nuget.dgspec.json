@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "c:\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI.Tests\\InteracaoMedicamentosaLambdaAPI.Tests.csproj": {}
+    "C:\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI.Tests\\InteracaoMedicamentosaLambdaAPI.Tests.csproj": {}
   },
   "projects": {
-    "c:\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI.Tests\\InteracaoMedicamentosaLambdaAPI.Tests.csproj": {
+    "C:\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI.Tests\\InteracaoMedicamentosaLambdaAPI.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI.Tests\\InteracaoMedicamentosaLambdaAPI.Tests.csproj",
+        "projectUniqueName": "C:\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI.Tests\\InteracaoMedicamentosaLambdaAPI.Tests.csproj",
         "projectName": "InteracaoMedicamentosaLambdaAPI.Tests",
-        "projectPath": "c:\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI.Tests\\InteracaoMedicamentosaLambdaAPI.Tests.csproj",
-        "packagesPath": "C:\\Users\\alisson.neves\\.nuget\\packages\\",
-        "outputPath": "c:\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI.Tests\\obj\\",
+        "projectPath": "C:\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI.Tests\\InteracaoMedicamentosaLambdaAPI.Tests.csproj",
+        "packagesPath": "C:\\Users\\neves\\.nuget\\packages\\",
+        "outputPath": "C:\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI.Tests\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\alisson.neves\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\neves\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "c:\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI.csproj": {
-                "projectPath": "c:\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI.csproj"
+              "C:\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI.csproj": {
+                "projectPath": "C:\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI.csproj"
               }
             }
           }
@@ -83,6 +87,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[6.0.4, 6.0.4]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -93,19 +103,28 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.104\\RuntimeIdentifierGraph.json"
         }
+      },
+      "runtimes": {
+        "linux-x64": {
+          "#import": []
+        }
       }
     },
-    "c:\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI.csproj": {
+    "C:\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI.csproj",
+        "projectUniqueName": "C:\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI.csproj",
         "projectName": "InteracaoMedicamentosaLambdaAPI",
-        "projectPath": "c:\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI.csproj",
-        "packagesPath": "C:\\Users\\alisson.neves\\.nuget\\packages\\",
-        "outputPath": "c:\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI\\obj\\",
+        "projectPath": "C:\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI.csproj",
+        "packagesPath": "C:\\Users\\neves\\.nuget\\packages\\",
+        "outputPath": "C:\\InteracaoMedicamentosaLambdaAPI\\InteracaoMedicamentosaLambdaAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\alisson.neves\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\neves\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -148,7 +167,19 @@
           "warn": true,
           "downloadDependencies": [
             {
+              "name": "Microsoft.AspNetCore.App.Runtime.linux-x64",
+              "version": "[6.0.4, 6.0.4]"
+            },
+            {
               "name": "Microsoft.NETCore.App.Crossgen2.win-x64",
+              "version": "[6.0.4, 6.0.4]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[6.0.4, 6.0.4]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.linux-x64",
               "version": "[6.0.4, 6.0.4]"
             }
           ],
@@ -161,6 +192,11 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.104\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "linux-x64": {
+          "#import": []
         }
       }
     }
