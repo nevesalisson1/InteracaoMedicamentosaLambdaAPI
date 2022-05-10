@@ -7,7 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\..\Infrastructure\Http\Interacao.Infrasctructure.Http\Interacao.Infrasctructure.Http.csproj" />
+    <ProjectReference Include="..\..\DTO\Interacao.Domain.DTO\Interacao.Domain.DTO.csproj" />
     <ProjectReference Include="..\..\Entities\Interacao.Entity\Interacao.Entity.csproj" />
   </ItemGroup>
 

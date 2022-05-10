@@ -1,4 +1,5 @@
-﻿using Interacao.Entity;
+﻿using Interacao.Domain.DTO;
+using Interacao.Entity;
 using Interacao.Service;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
@@ -13,8 +14,7 @@ namespace InteracaoMedicamentosaLambdaAPI.Controllers
     {
         public Medicamento medicamento;
 
-        // GET api/<MedicamentoController>/5
-        [HttpPost]
+        [HttpGet]
         public ActionResult<string> ObterMedicamento(string nome)
         {
             MedicamentoService medicamentoService = new MedicamentoService();
@@ -24,6 +24,20 @@ namespace InteracaoMedicamentosaLambdaAPI.Controllers
                 return BadRequest();
             }
             return Ok(medicamento);
+        }
+
+        [HttpGet]
+        public ActionResult<ResultadoInteracao> VerificaInteracoes(string rxcui1, string rxcui2)
+        {
+            MedicamentoService medicamentoService = new MedicamentoService();
+            ResultadoInteracao resultadoInteracao = medicamentoService.VerificaInteracoes(rxcui1, rxcui2);
+
+            if(resultadoInteracao == null)
+            {
+                return BadRequest();
+            }
+
+            return Ok(resultadoInteracao);
         }
 
     }
