@@ -14,4 +14,8 @@
   <ItemGroup>
     <PackageReference Include="Amazon.Lambda.AspNetCoreServer" Version="7.1.0" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Entities\Interacao.Entity\Interacao.Entity.csproj" />
+    <ProjectReference Include="..\Domain\Services\Interacao.Service\Interacao.Service.csproj" />
+  </ItemGroup>
 </Project>
