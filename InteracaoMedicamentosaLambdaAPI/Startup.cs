@@ -1,3 +1,5 @@
+using Interacao.CrossCuting.IoC;
+
 namespace InteracaoMedicamentosaLambdaAPI;
 
 public class Startup
@@ -13,6 +15,7 @@ public class Startup
     public void ConfigureServices(IServiceCollection services)
     {
         services.AddControllers();
+        DepedencyHandler.AddServicesDepedency(services);
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline

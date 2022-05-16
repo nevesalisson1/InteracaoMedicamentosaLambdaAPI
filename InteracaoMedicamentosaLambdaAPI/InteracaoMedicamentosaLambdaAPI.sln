@@ -29,7 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interacao.Infrasctructure.H
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DTO", "DTO", "{930F3633-98FB-4516-AA78-019BEF092263}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interacao.Domain.DTO", "..\Domain\DTO\Interacao.Domain.DTO\Interacao.Domain.DTO.csproj", "{9F3DE2BD-B8E6-4AED-B751-6148478829EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interacao.Domain.DTO", "..\Domain\DTO\Interacao.Domain.DTO\Interacao.Domain.DTO.csproj", "{9F3DE2BD-B8E6-4AED-B751-6148478829EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interacao.CrossCuting.IoC", "..\CrossCuting\IoC\Interacao.CrossCuting.IoC\Interacao.CrossCuting.IoC.csproj", "{FE1E930A-9276-4CA4-AA6B-24774158BF44}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{9F3DE2BD-B8E6-4AED-B751-6148478829EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F3DE2BD-B8E6-4AED-B751-6148478829EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F3DE2BD-B8E6-4AED-B751-6148478829EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE1E930A-9276-4CA4-AA6B-24774158BF44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE1E930A-9276-4CA4-AA6B-24774158BF44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE1E930A-9276-4CA4-AA6B-24774158BF44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE1E930A-9276-4CA4-AA6B-24774158BF44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,6 +78,7 @@ Global
 		{DA2AAFDF-5BED-4B83-B9E0-DB62024E94E5} = {1C6B89C3-740E-4E45-BE62-2DC14E1FF07B}
 		{930F3633-98FB-4516-AA78-019BEF092263} = {A709C4D9-B128-41A3-92B9-41D8DFF714D4}
 		{9F3DE2BD-B8E6-4AED-B751-6148478829EB} = {930F3633-98FB-4516-AA78-019BEF092263}
+		{FE1E930A-9276-4CA4-AA6B-24774158BF44} = {39DE4329-3775-4354-B896-0098F4FE9DC2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F6E2AA9F-2084-4326-B992-2FACC1F2E57A}

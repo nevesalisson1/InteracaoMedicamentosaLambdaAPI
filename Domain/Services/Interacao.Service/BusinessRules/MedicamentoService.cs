@@ -9,10 +9,11 @@ using Interacao.Infrasctructure.Http;
 using System.Text.Json;
 using Newtonsoft.Json.Linq;
 using Interacao.Domain.DTO;
+using Interacao.Service.Interfaces;
 
-namespace Interacao.Service
+namespace Interacao.Service.BusinessRules
 {
-    public class MedicamentoService
+    public class MedicamentoService : IMedicamentoService
     {
         public object ObterMedicamento(string medicamentoNome)
         {
@@ -25,7 +26,7 @@ namespace Interacao.Service
             return jsonString; 
         }
 
-        public ResultadoInteracao VerificaInteracoes(string rxcui1, string rxcui2)
+        public ResultadoInteracaoDTO VerificaInteracoes(string rxcui1, string rxcui2)
         {
             string urlComplementar = $"/interaction/list.json?rxcuis={rxcui1}+{rxcui2}";
 
@@ -35,11 +36,11 @@ namespace Interacao.Service
             {
                 var data = JObject.Parse(result);
 
-                ResultadoInteracao retorno = new ResultadoInteracao()
+                ResultadoInteracaoDTO retorno = new ResultadoInteracaoDTO()
                 {
-                    severidade = (string)data["fullInteractionTypeGroup"][0]["fullInteractionType"][0]["interactionPair"][0]["severity"],
-                    descricao = (string)data["fullInteractionTypeGroup"][0]["fullInteractionType"][0]["interactionPair"][0]["description"],
-                    fonte = (string)data["fullInteractionTypeGroup"][0]["sourceName"]
+                    Severidade = (string)data["fullInteractionTypeGroup"][0]["fullInteractionType"][0]["interactionPair"][0]["severity"],
+                    Descricao = (string)data["fullInteractionTypeGroup"][0]["fullInteractionType"][0]["interactionPair"][0]["description"],
+                    Fonte = (string)data["fullInteractionTypeGroup"][0]["sourceName"]
                 };
                 return retorno;
             }
