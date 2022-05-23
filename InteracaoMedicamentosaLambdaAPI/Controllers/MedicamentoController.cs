@@ -32,11 +32,30 @@ namespace InteracaoMedicamentosaLambdaAPI.Controllers
         }
 
         [HttpGet]
-        public ActionResult<ResultadoInteracaoDTO> VerificaInteracoes(string rxcui1, string rxcui2)
+        public ActionResult<List<Medicamento>> ListarMedicamentoDaBase()
         {
-            ResultadoInteracaoDTO resultadoInteracao = _medicamentoService.VerificaInteracoes(rxcui1, rxcui2);
+            return _medicamentoService.ListarMedicamentosDaBase();
+        }
+
+        [HttpGet]
+        public ActionResult<List<ResultadoInteracaoDTO>>VerificaInteracoes(string rxcui1, string rxcui2)
+        {
+            List<ResultadoInteracaoDTO> resultadoInteracao = _medicamentoService.VerificaInteracoes(rxcui1, rxcui2);
 
             if(resultadoInteracao == null)
+            {
+                return BadRequest();
+            }
+
+            return Ok(resultadoInteracao);
+        }
+
+        [HttpGet]
+        public ActionResult<ResultadoInteracaoDTO> ObtemMaiorInteracao(string rxcui1, string rxcui2)
+        {
+            ResultadoInteracaoDTO resultadoInteracao = _medicamentoService.ObtemMaiorInteracao(rxcui1, rxcui2);
+
+            if (resultadoInteracao == null)
             {
                 return BadRequest();
             }

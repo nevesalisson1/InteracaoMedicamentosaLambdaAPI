@@ -11,7 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Domain\DAO\Interacao.Domain.DAO\Interacao.Domain.DAO.csproj" />
     <ProjectReference Include="..\..\..\Domain\Services\Interacao.Service\Interacao.Service.csproj" />
+    <ProjectReference Include="..\..\..\Infrastructure\DynamoDB\Repository\Interacao.Infrasctructure.DynamoDB.Repository\Interacao.Infrasctructure.DynamoDB.Repository.csproj" />
   </ItemGroup>
 
 </Project>

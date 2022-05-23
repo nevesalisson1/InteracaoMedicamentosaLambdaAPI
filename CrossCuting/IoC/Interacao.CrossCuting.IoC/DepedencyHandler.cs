@@ -1,4 +1,6 @@
-﻿using Interacao.Service.BusinessRules;
+﻿using Interacao.Domain.DAO;
+using Interacao.Infrasctructure.DynamoDB.Repository;
+using Interacao.Service.BusinessRules;
 using Interacao.Service.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -10,6 +12,7 @@ namespace Interacao.CrossCuting.IoC
         {
             services.AddScoped<IMedicamentoService, MedicamentoService>();
             services.AddScoped<IProntuarioService, ProntuarioService>();
+            services.AddScoped<IMedicamentoRepository, MedicamentoRepository>();
         }
 
     }

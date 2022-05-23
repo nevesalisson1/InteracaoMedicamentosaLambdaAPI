@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\Infrastructure\Http\Interacao.Infrasctructure.Http\Interacao.Infrasctructure.Http.csproj" />
+    <ProjectReference Include="..\..\DAO\Interacao.Domain.DAO\Interacao.Domain.DAO.csproj" />
     <ProjectReference Include="..\..\DTO\Interacao.Domain.DTO\Interacao.Domain.DTO.csproj" />
     <ProjectReference Include="..\..\Entities\Interacao.Entity\Interacao.Entity.csproj" />
   </ItemGroup>

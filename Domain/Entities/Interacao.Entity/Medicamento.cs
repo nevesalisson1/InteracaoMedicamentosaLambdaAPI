@@ -9,7 +9,7 @@ namespace Interacao.Entity
     public class Medicamento
     {
         public int Id { get; set; }
-        public float Dosagens { get; set; }
+        public string Dosagem { get; set; }
         public string Nome { get; set; }
     }
 }

@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.7.3.36" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Domain\DAO\Interacao.Domain.DAO\Interacao.Domain.DAO.csproj" />
+    <ProjectReference Include="..\..\Contracts\Interacao.Infrastructure.DynamoDB.Contracts\Interacao.Infrastructure.DynamoDB.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>
